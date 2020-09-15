@@ -1,0 +1,65 @@
+.content{
+    padding: 3em;
+}
+
+.title{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-weight: bold;
+}
+
+.detail{
+    vertical-align: middle;
+    padding: 0.5em;
+}
+
+hr{
+    margin: 1em 0em;
+}
+
+.sound-package-item{
+    background-color: rgb(228, 228, 228);
+    color: black;
+    font-size: 20px;
+    display: block;
+    height: 150px;
+    padding: 20px;
+    border-radius: 0.7em;
+    margin-bottom: 1em;
+}
+
+.sound-package-item:hover{
+    color: black;
+    background-color: rgb(218, 218, 218);
+    text-decoration: none;
+}
+
+.create-link{
+    color: rgb(0, 91, 182);
+    padding: 0.5em;
+    border-radius: 0.5em;
+}
+
+.create-link:hover{
+    color: rgb(0, 91, 182);
+    text-decoration: none;
+    background-color: rgb(195, 225, 255);
+}
+
+.bottom-section{
+    justify-content: end;
+    display: flex;
+}
+
+.delete-link, .play-link{
+    padding: 1em;
+}
+
+.delete-link:hover{
+    color: red;
+    text-align: center;
+}
+
+.play-link:hover{
+    color: dodgerblue;
+}
