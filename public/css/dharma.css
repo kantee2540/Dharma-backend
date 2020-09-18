@@ -17,6 +17,31 @@ hr{
     margin: 1em 0em;
 }
 
+.access-block{
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    display: block;
+    background-color: rgb(230, 230, 230);
+    border-radius: 1em;
+}
+
+.access-block .icon{
+    font-size: 40px;
+    margin-bottom: 0.3em;
+}
+
+.access-block:hover{
+    text-decoration: none;
+    background-color: rgb(220, 220, 220);
+    color: black;
+}
+
+.access-block .description{
+    font-size: 14px;
+    color: gray;
+}
+
 .sound-package-item{
     background-color: rgb(228, 228, 228);
     color: black;

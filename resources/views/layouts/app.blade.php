@@ -47,9 +47,9 @@
                                 <x-jet-nav-link href="/admin/sound" :active="request()->routeIs('sound')">
                                     เสียง
                                 </x-jet-nav-link>
-                                <x-jet-nav-link href="/admin/schedule" :active="request()->routeIs('schedule')">
+                                {{-- <x-jet-nav-link href="/admin/schedule" :active="request()->routeIs('schedule')">
                                     กำหนดการ
-                                </x-jet-nav-link>
+                                </x-jet-nav-link> --}}
                             </div>
                         </div>
 
