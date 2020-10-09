@@ -72,7 +72,7 @@ class SoundController extends Controller{
 
     public function uploadFile(Request $request){
         $request->validate([
-            'file' => 'required|file|mimes:mp3',
+            'file' => 'required|file',
         ]);
         $id = $request->input('id');
         $folder = $request->input('folder');
