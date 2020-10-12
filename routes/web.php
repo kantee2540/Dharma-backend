@@ -23,6 +23,7 @@ use App\Http\Controllers\ScheduleController;
 //return as API JSON
 Route::get('/sound', [SoundApiController::class, 'index']);
 Route::get('/sound/package', [SoundApiController::class, 'show']);
+Route::get('/sound/{folder}/{file}', [SoundApiController::class, 'download']);
 
 // Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 //     return view('dashboard');

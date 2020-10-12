@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 use DB;
 
 class SoundApiController extends Controller
@@ -35,4 +36,13 @@ class SoundApiController extends Controller
 
         echo json_encode($query);
     }
+
+    public function download($folder, $file){
+        $path = public_path('sound_resource/'.$folder.'/'.$file);
+        $headers = array(
+            'Content-Type: application/mp3',
+          );
+        echo $path;
+        return response()->download($path, $file, $headers);
+    } 
 }
