@@ -24,7 +24,9 @@ class SoundApiController extends Controller
             ->get();
         
         }else{
-            $query = DB::table('sounds')->get();
+            $query = DB::table('sounds')
+            ->orderby('updated_at', 'desc')
+            ->get();
         }
         echo json_encode($query);
     }
